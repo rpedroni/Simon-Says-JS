@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TestGame</title>
+  </head>
+  <body>
+
+    <style>
+      #game-board {
+        width: 800px;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .led-and-button {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .led, .game-button {
+        height: 30px; width: 30px;
+      }
+      .led {
+        border-radius: 30px;
+        background-color: lightgreen;
+        margin-bottom: 10px;
+      }
+      .led.on {
+        background-color: green;
+      }
+      .game-button {
+        cursor: pointer;
+      }
+    </style>
+
+    <div id="game-board">
+      <p id="message"></p>
+    </div>
+
+    <div style="display:none">
+      <div class="led-and-button">
+        <div class="led"></div>
+        <button class="game-button"></button>
+      </div>
+    </div>
+
+
+  <script type="text/javascript" src="gameboard.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="gameplay.js"></script>
+
+  </body>
+</html>
